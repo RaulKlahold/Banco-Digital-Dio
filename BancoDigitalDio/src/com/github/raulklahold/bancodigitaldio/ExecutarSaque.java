@@ -5,15 +5,14 @@ public class ExecutarSaque {
 
 		double saldo = ColetarDados.getSaldo();
 		double valor = ColetarDados.getValor();
-        double valorsacado = 0;
         
 		if (saldo >= valor) {
-			valorsacado = saldo - valor;
+			saldo = saldo - valor;
 		}else {
 			System.out.println("adicionar uma exceptions aqui");
 		}
 			
-     return valorsacado;
+     return saldo;
 		
 
 	}
