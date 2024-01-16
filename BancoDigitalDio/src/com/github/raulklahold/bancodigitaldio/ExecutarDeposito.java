@@ -5,15 +5,15 @@ public class ExecutarDeposito {
 	   
 	   double saldo = ColetarDados.getSaldo();
 		double valor = ColetarDados.getValor();
-       double valo = 0;
        
-		if (saldo >= valor) {
-			valorsacado = saldo - valor;
+       
+		if (valor >= 1) {
+			saldo = saldo + valor;
 		}else {
 			System.out.println("adicionar uma exceptions aqui");
 		}
 			
-    return valorsacado;
+    return saldo;
 		
    }
 }
