@@ -11,6 +11,17 @@ public class RetornaMain {
 		
 	System.out.println("\nBem vindos ao Banco Digital! \n");
 	System.out.println("\nPara qual opção você deseja ter acesso? \n");
+	System.out.println("Escolha a seu tipo de conta C - conta corrente P - poupança: \n");
+	String opcao = scan.nextLine();
+	
+	if(opcao == "C" || opcao == "c") {
+		
+	}
+	else if(opcao == "p" || opcao == "P") {
+		
+	}else {
+		System.out.println("Colocar uma exception aqui");
+	}
 	
 
 	}
