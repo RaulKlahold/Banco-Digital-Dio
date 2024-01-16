@@ -9,6 +9,24 @@ public class ColetarDados {
 	private ExecutarDeposito deposito;
 	private ExecutarTRasnferencia transferencia;
 	private ExecutarSaque saque;
+	private ContaCorrente conta;
+	private Poupanca poupanca;
+
+	public ContaCorrente getConta() {
+		return conta;
+	}
+
+	public void setConta(ContaCorrente conta) {
+		this.conta = conta;
+	}
+
+	public Poupanca getPoupanca() {
+		return poupanca;
+	}
+
+	public void setPoupanca(Poupanca poupanca) {
+		this.poupanca = poupanca;
+	}
 
 	public ExecutarDeposito getDeposito() {
 		return deposito;
