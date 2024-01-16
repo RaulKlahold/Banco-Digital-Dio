@@ -6,6 +6,8 @@ public class ColetarDados {
 	private String Numeroconta;
 	private double valor;
 	private double saldo;
+	
+	
 	public String getNome() {
 		return Nome;
 	}
