@@ -15,20 +15,30 @@ public class RetornaMain {
 
 		if(opcao == 1) {
 			System.out.println("Por favor insira seu nome");
-			String nome = scan.nextLine();
+			String nome = scan.next();
 			cx.setNome(nome);
 			
 			System.out.println("Por favor insira o numero de sua agência");
-			String agencia = scan.nextLine();
+			String agencia = scan.next();
 			cx.setAgencia(agencia);
 			
 			System.out.println("Por favor insira o numero da sua conta");
-			String conta = scan.nextLine();
+			String conta = scan.next();
 			cx.setNumeroconta(conta);
 			
 			System.out.println("Qual operação deseja realizar?:");
 			System.out.println("1 - Saque 2 - Deposito 3 - Transferência");
 			int operacao = scan.nextInt();
+			
+			if(operacao == 1) {
+				System.out.println("Ele quer fazer um saque");
+			}
+			else if(operacao == 2) {
+				System.out.println("Ele quer eealizar um deposito");
+			}
+			else if(operacao == 3) {
+				System.out.println("Ele quer fazer uma transferencia");
+			}
 			
 			
 			
