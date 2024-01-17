@@ -22,6 +22,11 @@ public class RetornaMain {
 			String agencia = scan.nextLine();
 			cx.setAgencia(agencia);
 			
+			System.out.println("Por favor insira o numero da sua conta");
+			String conta = scan.nextLine();
+			cx.setNumeroconta(conta);
+			
+			
 		}
 		else if(opcao == 2) {
 			System.out.println("teste 2");
