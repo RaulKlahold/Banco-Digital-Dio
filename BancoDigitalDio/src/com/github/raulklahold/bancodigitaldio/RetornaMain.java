@@ -13,7 +13,15 @@ public class RetornaMain {
 		System.out.println("Escolha a seu tipo de conta 1 - conta corrente 2 - poupança: \n");
 		int opcao = scan.nextInt();
 
-		
+		if(opcao == 1) {
+			System.out.println("teste if");
+		}
+		else if(opcao == 2) {
+			System.out.println("teste 2");
+			
+		}else {
+			System.out.println("Solução não encontrada");
+		}
 		
 	}
 }
