@@ -19,8 +19,8 @@ public class RetornaMain {
 			cx.setNome(nomeCC);
 			
 			System.out.println("Por favor insira o numero de sua agência");
-			int agencia = scan.nextInt();
-			cx.setAgencia(agencia);
+			int agenciaCC = scan.nextInt();
+			cx.setAgencia(agenciaCC);
 			
 			System.out.println("Por favor insira o numero da sua conta");
 			String conta = scan.next();
