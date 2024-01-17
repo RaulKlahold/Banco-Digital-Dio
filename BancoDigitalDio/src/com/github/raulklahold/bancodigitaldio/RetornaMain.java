@@ -35,14 +35,23 @@ public class RetornaMain {
 				double saqueCC = scan.nextDouble();
 				cx.setValor(saqueCC);
 				
-				double resultanteCC = ExecutarSaque.sacar(cx);
-                double saldoCC = cx.getSaldo();
+				double resultanteSaqueCC = ExecutarSaque.sacar(cx);
+                double saldoSaqueCC = cx.getSaldo();
                 
-				System.out.println("Você Sacou: "+resultanteCC+" $");
-				System.out.println("Agora você possui em conta: "+saldoCC+" $");
+				System.out.println("Você Sacou: "+resultanteSaqueCC+" $");
+				System.out.println("Agora você possui em conta: "+saldoSaqueCC+" $");
 			}
 			else if(operacaoCC == 2) {
-				System.out.println("Ele quer eealizar um deposito");
+				
+				System.out.println("Qual o valor que deseja depositar?: ");
+				double depositoCC = scan.nextDouble();
+				cx.setValor(depositoCC);
+				
+				double resultanteDepositoCC = ExecutarDeposito.Deposito(cx);
+                double saldoDepositoCC = cx.getSaldo();
+                
+				System.out.println("Você depositou: "+resultanteDepositoCC+" $");
+				System.out.println("Agora você possui em conta: "+saldoDepositoCC+" $");
 			}
 			else if(operacaoCC == 3) {
 				System.out.println("Ele quer fazer uma transferencia");
