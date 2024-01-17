@@ -13,19 +13,7 @@ public class RetornaMain {
 		System.out.println("Escolha a seu tipo de conta 1 - conta corrente 2 - poupança: \n");
 		int opcao = scan.nextInt();
 
-		switch (opcao) {
-		case 1:
-			System.out.println("opçao C maiusculo");
-			break;
-
-		case 2:
-			System.out.println("opçao P minusculo");
-			break;
-
-		default:
-			System.out.println("Pedido não encontrado");
-			break;
-
-		}
+		
+		
 	}
 }
