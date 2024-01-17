@@ -13,19 +13,43 @@ public class RetornaMain {
 		System.out.println("Escolha a seu tipo de conta 1 - conta corrente 2 - poupança: \n");
 		int opcao = scan.nextInt();
 
-		switch (opcao) {
-		case 1:
-			System.out.println("opçao C maiusculo");
-			break;
-
-		case 2:
-			System.out.println("opçao P minusculo");
-			break;
-
-		default:
-			System.out.println("Pedido não encontrado");
-			break;
-
+		if(opcao == 1) {
+			System.out.println("Por favor insira seu nome");
+			String nome = scan.next();
+			cx.setNome(nome);
+			
+			System.out.println("Por favor insira o numero de sua agência");
+			int agencia = scan.nextInt();
+			cx.setAgencia(agencia);
+			
+			System.out.println("Por favor insira o numero da sua conta");
+			String conta = scan.next();
+			cx.setNumeroconta(conta);
+			
+			System.out.println("Qual operação deseja realizar?:");
+			System.out.println("1 - Saque 2 - Deposito 3 - Transferência");
+			int operacao = scan.nextInt();
+			
+			if(operacao == 1) {
+				System.out.println("Ele quer fazer um saque");
+			}
+			else if(operacao == 2) {
+				System.out.println("Ele quer eealizar um deposito");
+			}
+			else if(operacao == 3) {
+				System.out.println("Ele quer fazer uma transferencia");
+			}
+			
+			
+			
+			
 		}
+		else if(opcao == 2) {
+			System.out.println("teste 2");
+			
+		}else {
+			System.out.println("Solução não encontrada");
+		}
+		
 	}
 }

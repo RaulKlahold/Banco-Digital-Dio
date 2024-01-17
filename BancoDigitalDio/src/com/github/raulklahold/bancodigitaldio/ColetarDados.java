@@ -2,7 +2,7 @@ package com.github.raulklahold.bancodigitaldio;
 
 public class ColetarDados {
 	private String Nome;
-	private String agencia;
+	private int agencia;
 	private String Numeroconta;
 	private double valor;
 	private double saldo;
@@ -60,11 +60,11 @@ public class ColetarDados {
 		Nome = nome;
 	}
 
-	public String getAgencia() {
+	public int getAgencia() {
 		return agencia;
 	}
 
-	public void setAgencia(String agencia) {
+	public void setAgencia(int agencia) {
 		this.agencia = agencia;
 	}
 
