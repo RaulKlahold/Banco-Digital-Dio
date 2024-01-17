@@ -35,7 +35,11 @@ public class RetornaMain {
 				double saqueCC = scan.nextDouble();
 				cx.setValor(saqueCC);
 				
-				double resultante = cx.ExecutarSaque
+				double resultanteCC = ExecutarSaque.sacar(cx);
+                double saldoCC = cx.getSaldo();
+                
+				System.out.println("Você Sacou: "+resultanteCC+" $");
+				System.out.println("Agora você possui em conta: "+saldoCC+" $");
 			}
 			else if(operacaoCC == 2) {
 				System.out.println("Ele quer eealizar um deposito");
