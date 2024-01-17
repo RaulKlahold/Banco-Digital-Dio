@@ -23,8 +23,8 @@ public class RetornaMain {
 			cx.setAgencia(agenciaCC);
 			
 			System.out.println("Por favor insira o numero da sua conta");
-			String conta = scan.next();
-			cx.setNumeroconta(conta);
+			String contaCC = scan.next();
+			cx.setNumeroconta(contaCC);
 			
 			System.out.println("Qual operação deseja realizar?:");
 			System.out.println("1 - Saque 2 - Deposito 3 - Transferência");
