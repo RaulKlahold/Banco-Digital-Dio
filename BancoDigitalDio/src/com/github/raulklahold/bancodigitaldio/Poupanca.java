@@ -4,7 +4,7 @@ public class Poupanca {
 	 public static String Contacorrente(ColetarDados ColetarDados) {
 		
 		    	   String nome = ColetarDados.getNome();
-		    	   String agencia = ColetarDados.getAgencia();
+		    	   int agencia = ColetarDados.getAgencia();
 		    	   String numeroconta = ColetarDados.getNumeroconta();
 		    	   double saldo = ColetarDados.getSaldo();
 		    	   
