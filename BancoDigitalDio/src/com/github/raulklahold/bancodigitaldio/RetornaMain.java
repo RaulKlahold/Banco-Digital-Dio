@@ -14,7 +14,10 @@ public class RetornaMain {
 		int opcao = scan.nextInt();
 
 		if(opcao == 1) {
-			System.out.println("teste if");
+			System.out.println("Por favor insira seu nome");
+			String nome = scan.nextLine();
+			cx.setNome(nome);
+			
 		}
 		else if(opcao == 2) {
 			System.out.println("teste 2");
