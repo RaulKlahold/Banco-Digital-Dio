@@ -65,6 +65,9 @@ public class RetornaMain {
 				System.out.println("Você depositou: "+resultantetransferenciaCC+" $");
 				System.out.println("Agora você possui em conta: "+saldoTransferenciaCC+" $");
 			}
+			else {
+				System.out.println("por uma exception aqui?");
+			}
 			
 			
 			
