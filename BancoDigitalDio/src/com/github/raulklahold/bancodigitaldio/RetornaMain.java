@@ -18,6 +18,10 @@ public class RetornaMain {
 			String nome = scan.nextLine();
 			cx.setNome(nome);
 			
+			System.out.println("Por favor insira o numero de sua agência");
+			String agencia = scan.nextLine();
+			cx.setAgencia(agencia);
+			
 		}
 		else if(opcao == 2) {
 			System.out.println("teste 2");
