@@ -31,7 +31,11 @@ public class RetornaMain {
 			int operacaoCC = scan.nextInt();
 			
 			if(operacaoCC == 1) {
-				System.out.println("Ele quer fazer um saque");
+				System.out.println("Qual o valor que deseja sacar?: ");
+				double saqueCC = scan.nextDouble();
+				cx.setValor(saqueCC);
+				
+				double resultante = cx.ExecutarSaque
 			}
 			else if(operacaoCC == 2) {
 				System.out.println("Ele quer eealizar um deposito");
