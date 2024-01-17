@@ -6,51 +6,11 @@ public class ColetarDados {
 	private String Numeroconta;
 	private double valor;
 	private double saldo;
-	private ExecutarDeposito deposito;
-	private ExecutarTRasnferencia transferencia;
-	private ExecutarSaque saque;
-	private ContaCorrente conta;
-	private Poupanca poupanca;
-
-	public ContaCorrente getConta() {
-		return conta;
-	}
-
-	public void setConta(ContaCorrente conta) {
-		this.conta = conta;
-	}
-
-	public Poupanca getPoupanca() {
-		return poupanca;
-	}
-
-	public void setPoupanca(Poupanca poupanca) {
-		this.poupanca = poupanca;
-	}
-
-	public ExecutarDeposito getDeposito() {
-		return deposito;
-	}
-
-	public void setDeposito(ExecutarDeposito deposito) {
-		this.deposito = deposito;
-	}
-
-	public ExecutarTRasnferencia getTransferencia() {
-		return transferencia;
-	}
-
-	public void setTransferencia(ExecutarTRasnferencia transferencia) {
-		this.transferencia = transferencia;
-	}
-
-	public ExecutarSaque getSaque() {
-		return saque;
-	}
-
-	public void setSaque(ExecutarSaque saque) {
-		this.saque = saque;
-	}
+	public ExecutarDeposito deposito;
+	public ExecutarTRasnferencia transferencia;
+	public ExecutarSaque saque;
+	public ContaCorrente conta;
+	public Poupanca poupanca;
 
 	public String getNome() {
 		return Nome;

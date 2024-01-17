@@ -15,29 +15,61 @@ public class RetornaMain {
 
 		if(opcao == 1) {
 			System.out.println("Por favor insira seu nome");
-			String nome = scan.next();
-			cx.setNome(nome);
+			String nomeCC = scan.next();
+			cx.setNome(nomeCC);
 			
 			System.out.println("Por favor insira o numero de sua agência");
-			int agencia = scan.nextInt();
-			cx.setAgencia(agencia);
+			int agenciaCC = scan.nextInt();
+			cx.setAgencia(agenciaCC);
 			
 			System.out.println("Por favor insira o numero da sua conta");
-			String conta = scan.next();
-			cx.setNumeroconta(conta);
+			String contaCC = scan.next();
+			cx.setNumeroconta(contaCC);
+			
+			System.out.println("\n Olá, "+cx.getNome()+"\n"+
+			                    "\n ----------------- \n"+
+			                   "\n Agência:"+cx.getAgencia()+"\n"+
+			                   "\n Conta: "+cx.getNumeroconta()+"\n"+
+			                   "\n Saldo: "+cx.getSaldo()+" $ \n");
 			
 			System.out.println("Qual operação deseja realizar?:");
 			System.out.println("1 - Saque 2 - Deposito 3 - Transferência");
-			int operacao = scan.nextInt();
+			int operacaoCC = scan.nextInt();
 			
-			if(operacao == 1) {
-				System.out.println("Ele quer fazer um saque");
+			if(operacaoCC == 1) {
+				System.out.println("Qual o valor que deseja sacar?: ");
+				double saqueCC = scan.nextDouble();
+				cx.setValor(saqueCC);
+				
+				double resultanteSaqueCC = ExecutarSaque.sacar(cx);
+                
+                
+				System.out.println("Você Sacou: "+resultanteSaqueCC+" $");
+				
 			}
-			else if(operacao == 2) {
-				System.out.println("Ele quer eealizar um deposito");
+			else if(operacaoCC == 2) {
+				
+				System.out.println("Qual o valor que deseja depositar?: ");
+				double depositoCC = scan.nextDouble();
+				cx.setValor(depositoCC);
+				
+				double resultanteDepositoCC = ExecutarDeposito.Deposito(cx);
+                
+                System.out.println("Você depositou: "+resultanteDepositoCC+" $");
 			}
-			else if(operacao == 3) {
-				System.out.println("Ele quer fazer uma transferencia");
+			else if(operacaoCC == 3) {
+				
+				System.out.println("Qual o valor que deseja transferir?: ");
+				double transferenciaCC = scan.nextDouble();
+				cx.setValor(transferenciaCC);
+				
+				double resultantetransferenciaCC = ExecutarTRasnferencia.Transferir(cx);
+               
+				System.out.println("Você depositou: "+resultantetransferenciaCC+" $");
+				
+			}
+			else {
+				System.out.println("por uma exception aqui?");
 			}
 			
 			
