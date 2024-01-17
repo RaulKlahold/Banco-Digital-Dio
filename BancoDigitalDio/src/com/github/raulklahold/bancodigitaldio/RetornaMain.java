@@ -26,6 +26,12 @@ public class RetornaMain {
 			String conta = scan.nextLine();
 			cx.setNumeroconta(conta);
 			
+			System.out.println("Qual operação deseja realizar?:");
+			System.out.println("1 - Saque 2 - Deposito 3 - Transferência");
+			int operacao = scan.nextInt();
+			
+			
+			
 			
 		}
 		else if(opcao == 2) {
