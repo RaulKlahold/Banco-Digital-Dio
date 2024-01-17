@@ -28,15 +28,15 @@ public class RetornaMain {
 			
 			System.out.println("Qual operação deseja realizar?:");
 			System.out.println("1 - Saque 2 - Deposito 3 - Transferência");
-			int operacao = scan.nextInt();
+			int operacaoCC = scan.nextInt();
 			
-			if(operacao == 1) {
+			if(operacaoCC == 1) {
 				System.out.println("Ele quer fazer um saque");
 			}
-			else if(operacao == 2) {
+			else if(operacaoCC == 2) {
 				System.out.println("Ele quer eealizar um deposito");
 			}
-			else if(operacao == 3) {
+			else if(operacaoCC == 3) {
 				System.out.println("Ele quer fazer uma transferencia");
 			}
 			
