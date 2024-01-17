@@ -15,8 +15,8 @@ public class RetornaMain {
 
 		if(opcao == 1) {
 			System.out.println("Por favor insira seu nome");
-			String nome = scan.next();
-			cx.setNome(nome);
+			String nomeCC = scan.next();
+			cx.setNome(nomeCC);
 			
 			System.out.println("Por favor insira o numero de sua agência");
 			int agencia = scan.nextInt();
