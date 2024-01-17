@@ -26,6 +26,12 @@ public class RetornaMain {
 			String contaCC = scan.next();
 			cx.setNumeroconta(contaCC);
 			
+			System.out.println("\n Olá, "+cx.getNome()+"\n"+
+			                    "\n ----------------- \n"+
+			                   "\n Agência:"+cx.getAgencia()+"\n"+
+			                   "\n Conta: "+cx.getNumeroconta()+"\n"+
+			                   "\n Saldo: "+cx.getSaldo()+" $ \n");
+			
 			System.out.println("Qual operação deseja realizar?:");
 			System.out.println("1 - Saque 2 - Deposito 3 - Transferência");
 			int operacaoCC = scan.nextInt();
@@ -36,10 +42,10 @@ public class RetornaMain {
 				cx.setValor(saqueCC);
 				
 				double resultanteSaqueCC = ExecutarSaque.sacar(cx);
-                double saldoSaqueCC = cx.getSaldo();
+                
                 
 				System.out.println("Você Sacou: "+resultanteSaqueCC+" $");
-				System.out.println("Agora você possui em conta: "+saldoSaqueCC+" $");
+				
 			}
 			else if(operacaoCC == 2) {
 				
@@ -48,10 +54,8 @@ public class RetornaMain {
 				cx.setValor(depositoCC);
 				
 				double resultanteDepositoCC = ExecutarDeposito.Deposito(cx);
-                double saldoDepositoCC = cx.getSaldo();
                 
-				System.out.println("Você depositou: "+resultanteDepositoCC+" $");
-				System.out.println("Agora você possui em conta: "+saldoDepositoCC+" $");
+                System.out.println("Você depositou: "+resultanteDepositoCC+" $");
 			}
 			else if(operacaoCC == 3) {
 				
@@ -60,10 +64,9 @@ public class RetornaMain {
 				cx.setValor(transferenciaCC);
 				
 				double resultantetransferenciaCC = ExecutarTRasnferencia.Transferir(cx);
-                double saldoTransferenciaCC = cx.getSaldo();
-                
+               
 				System.out.println("Você depositou: "+resultantetransferenciaCC+" $");
-				System.out.println("Agora você possui em conta: "+saldoTransferenciaCC+" $");
+				
 			}
 			else {
 				System.out.println("por uma exception aqui?");
