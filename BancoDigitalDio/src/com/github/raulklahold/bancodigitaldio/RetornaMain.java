@@ -54,7 +54,16 @@ public class RetornaMain {
 				System.out.println("Agora você possui em conta: "+saldoDepositoCC+" $");
 			}
 			else if(operacaoCC == 3) {
-				System.out.println("Ele quer fazer uma transferencia");
+				
+				System.out.println("Qual o valor que deseja transferir?: ");
+				double transferenciaCC = scan.nextDouble();
+				cx.setValor(transferenciaCC);
+				
+				double resultantetransferenciaCC = ExecutarTRasnferencia.Transferir(cx);
+                double saldoTransferenciaCC = cx.getSaldo();
+                
+				System.out.println("Você depositou: "+resultantetransferenciaCC+" $");
+				System.out.println("Agora você possui em conta: "+saldoTransferenciaCC+" $");
 			}
 			
 			
