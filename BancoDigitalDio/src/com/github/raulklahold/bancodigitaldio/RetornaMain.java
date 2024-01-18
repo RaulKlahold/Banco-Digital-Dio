@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class RetornaMain {
 
 	public static void main(String[] args) {
+		
 		ColetarDados cx = new ColetarDados();
 		Scanner scan = new Scanner(System.in);
 
@@ -61,11 +62,12 @@ public class RetornaMain {
 				
 				System.out.println("Qual o valor que deseja transferir?: ");
 				double transferenciaCC = scan.nextDouble();
-				cx.setValor(transferenciaCC);
+			
+			cx.setValor(transferenciaCC);
 				
 				double resultantetransferenciaCC = ExecutarTRasnferencia.Transferir(cx);
                
-				System.out.println("Você depositou: "+resultantetransferenciaCC+" $");
+				System.out.println("Você transferiu: "+resultantetransferenciaCC+" $");
 				
 			}
 			else {
@@ -141,6 +143,8 @@ public class RetornaMain {
 		}else {
 			System.out.println("Essa opção não existe!");
 		}
+		scan.close();
 		
-	}
+}
+
 }

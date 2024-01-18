@@ -1,7 +1,7 @@
 package com.github.raulklahold.bancodigitaldio;
 
 public class Poupanca {
-	 public static String Contacorrente(ColetarDados ColetarDados) throws ExceptionConta, ExceptionNome {
+	 public static String Contacorrente(ColetarDados ColetarDados){
 
 
 		    	   String nome = ColetarDados.getNome();
@@ -9,13 +9,6 @@ public class Poupanca {
 		    	   String numeroconta = ColetarDados.getNumeroconta();
 		    	   double saldo = ColetarDados.getSaldo();
 
-		   		if (nome.length() < 3) {
-		   			throw new ExceptionNome();
-		   		}
-
-		   		else if (numeroconta.length() < 7) {
-		   			throw new ExceptionConta();
-		   		} else {
 
 		    	   String credencial = "Olá, " + nome + " Tudo bem?\n" +
 		                               "Sua agência é: " + agencia + "\n" +
@@ -28,5 +21,5 @@ public class Poupanca {
 		       }
   	  
   
-     }}
+     }
 
