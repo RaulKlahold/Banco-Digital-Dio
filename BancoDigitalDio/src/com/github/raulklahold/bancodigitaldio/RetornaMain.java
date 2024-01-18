@@ -77,7 +77,64 @@ public class RetornaMain {
 			
 		}
 		else if(opcao == 2) {
-			System.out.println("teste 2");
+			
+			System.out.println("Por favor insira seu nome");
+			String nomePP = scan.next();
+			cx.setNome(nomePP);
+			
+			System.out.println("Por favor insira o numero de sua agência");
+			int agenciaCC = scan.nextInt();
+			cx.setAgencia(agenciaCC);
+			
+			System.out.println("Por favor insira o numero da sua conta");
+			String contaCC = scan.next();
+			cx.setNumeroconta(contaCC);
+			
+			System.out.println("\n Olá, "+cx.getNome()+"\n"+
+			                    "\n ----------------- \n"+
+			                   "\n Agência:"+cx.getAgencia()+"\n"+
+			                   "\n Conta: "+cx.getNumeroconta()+"\n"+
+			                   "\n Saldo: "+cx.getSaldo()+" $ \n");
+			
+			System.out.println("Qual operação deseja realizar?:");
+			System.out.println("1 - Saque 2 - Deposito 3 - Transferência");
+			int operacaoCC = scan.nextInt();
+			
+			if(operacaoCC == 1) {
+				System.out.println("Qual o valor que deseja sacar?: ");
+				double saqueCC = scan.nextDouble();
+				cx.setValor(saqueCC);
+				
+				double resultanteSaqueCC = ExecutarSaque.sacar(cx);
+                
+                
+				System.out.println("Você Sacou: "+resultanteSaqueCC+" $");
+				
+			}
+			else if(operacaoCC == 2) {
+				 
+				System.out.println("Qual o valor que deseja depositar?: ");
+				double depositoCC = scan.nextDouble();
+				cx.setValor(depositoCC);
+				
+				double resultanteDepositoCC = ExecutarDeposito.Deposito(cx);
+                
+                System.out.println("Você depositou: "+resultanteDepositoCC+" $");
+			}
+			else if(operacaoCC == 3) {
+				
+				System.out.println("Qual o valor que deseja transferir?: ");
+				double transferenciaCC = scan.nextDouble();
+				cx.setValor(transferenciaCC);
+				
+				double resultantetransferenciaCC = ExecutarTRasnferencia.Transferir(cx);
+               
+				System.out.println("Você depositou: "+resultantetransferenciaCC+" $");
+				
+			}
+			else {
+				System.out.println("por uma exception aqui?");
+			}
 			
 		}else {
 			System.out.println("Solução não encontrada");
