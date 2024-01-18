@@ -83,12 +83,12 @@ public class RetornaMain {
 			cx.setNome(nomePP);
 			
 			System.out.println("Por favor insira o numero de sua agência");
-			int agenciaCC = scan.nextInt();
-			cx.setAgencia(agenciaCC);
+			int agenciaPP = scan.nextInt();
+			cx.setAgencia(agenciaPP);
 			
 			System.out.println("Por favor insira o numero da sua conta");
-			String contaCC = scan.next();
-			cx.setNumeroconta(contaCC);
+			String contaPP = scan.next();
+			cx.setNumeroconta(contaPP);
 			
 			System.out.println("\n Olá, "+cx.getNome()+"\n"+
 			                    "\n ----------------- \n"+
