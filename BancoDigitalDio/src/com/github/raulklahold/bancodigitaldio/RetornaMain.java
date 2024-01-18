@@ -120,6 +120,8 @@ public class RetornaMain {
 				double resultanteDepositoPP = ExecutarDeposito.Deposito(cx);
                 
                 System.out.println("Você depositou: "+resultanteDepositoPP+" $");
+              
+                
 			}
 			else if(operacaoPP == 3) {
 				
@@ -129,7 +131,7 @@ public class RetornaMain {
 				
 				double resultantetransferenciaPP = ExecutarTRasnferencia.Transferir(cx);
                
-				System.out.println("Você depositou: "+resultantetransferenciaPP+" $");
+				System.out.println("Você Transferiu: "+resultantetransferenciaPP+" $");
 				
 			}
 			else {
