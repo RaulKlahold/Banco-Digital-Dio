@@ -139,7 +139,7 @@ public class RetornaMain {
 			}
 			
 		}else {
-			System.out.println("Solução não encontrada");
+			System.out.println("Essa opção não existe!");
 		}
 		
 	}
