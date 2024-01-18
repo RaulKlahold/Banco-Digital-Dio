@@ -135,7 +135,7 @@ public class RetornaMain {
 				
 			}
 			else {
-				System.out.println("por uma exception aqui?");
+				System.out.println("Operação não encontrada!");
 			}
 			
 		}else {
