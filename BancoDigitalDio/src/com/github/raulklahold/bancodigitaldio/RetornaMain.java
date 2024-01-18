@@ -105,13 +105,13 @@ public class RetornaMain {
 				double saquePP = scan.nextDouble();
 				cx.setValor(saquePP);
 				
-				double resultanteSaqueCC = ExecutarSaque.sacar(cx);
+				double resultanteSaquePP = ExecutarSaque.sacar(cx);
                 
                 
-				System.out.println("Você Sacou: "+resultanteSaqueCC+" $");
+				System.out.println("Você Sacou: "+resultanteSaquePP+" $");
 				
 			}
-			else if(operacaoCC == 2) {
+			else if(operacaoPP == 2) {
 				 
 				System.out.println("Qual o valor que deseja depositar?: ");
 				double depositoCC = scan.nextDouble();
