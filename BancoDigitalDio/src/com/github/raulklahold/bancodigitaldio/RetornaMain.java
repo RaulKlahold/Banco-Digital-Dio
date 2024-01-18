@@ -114,22 +114,22 @@ public class RetornaMain {
 			else if(operacaoPP == 2) {
 				 
 				System.out.println("Qual o valor que deseja depositar?: ");
-				double depositoCC = scan.nextDouble();
-				cx.setValor(depositoCC);
+				double depositoPP = scan.nextDouble();
+				cx.setValor(depositoPP);
 				
-				double resultanteDepositoCC = ExecutarDeposito.Deposito(cx);
+				double resultanteDepositoPP = ExecutarDeposito.Deposito(cx);
                 
-                System.out.println("Você depositou: "+resultanteDepositoCC+" $");
+                System.out.println("Você depositou: "+resultanteDepositoPP+" $");
 			}
-			else if(operacaoCC == 3) {
+			else if(operacaoPP == 3) {
 				
 				System.out.println("Qual o valor que deseja transferir?: ");
-				double transferenciaCC = scan.nextDouble();
-				cx.setValor(transferenciaCC);
+				double transferenciaPP = scan.nextDouble();
+				cx.setValor(transferenciaPP);
 				
-				double resultantetransferenciaCC = ExecutarTRasnferencia.Transferir(cx);
+				double resultantetransferenciaPP = ExecutarTRasnferencia.Transferir(cx);
                
-				System.out.println("Você depositou: "+resultantetransferenciaCC+" $");
+				System.out.println("Você depositou: "+resultantetransferenciaPP+" $");
 				
 			}
 			else {
