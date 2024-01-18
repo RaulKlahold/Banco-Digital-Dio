@@ -48,7 +48,7 @@ public class RetornaMain {
 				
 			}
 			else if(operacaoCC == 2) {
-				
+				 
 				System.out.println("Qual o valor que deseja depositar?: ");
 				double depositoCC = scan.nextDouble();
 				cx.setValor(depositoCC);
