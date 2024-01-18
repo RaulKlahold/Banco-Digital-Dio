@@ -1,7 +1,8 @@
-# Sistema de Conta Digital em Java
-*Este é um simples sistema de conta digital desenvolvido em Java, 
+# Sistema de Conta Digital em Java.
+
+Este é um simples sistema de conta digital desenvolvido em Java, 
 utilizando a funcionalidade Scanner para interação com o usuário. 
-O sistema permite que o usuário manipule uma conta corrente ou uma conta poupança, realizando operações como saque, depósito e transferência.*
+O sistema permite que o usuário manipule uma conta corrente ou uma conta poupança, realizando operações como saque, depósito e transferência.
 ---
 ## Funcionalidades
 - Escolha entre tipos de conta:
