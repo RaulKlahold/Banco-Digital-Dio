@@ -98,12 +98,12 @@ public class RetornaMain {
 			
 			System.out.println("Qual operação deseja realizar?:");
 			System.out.println("1 - Saque 2 - Deposito 3 - Transferência");
-			int operacaoCC = scan.nextInt();
+			int operacaoPP = scan.nextInt();
 			
-			if(operacaoCC == 1) {
+			if(operacaoPP == 1) {
 				System.out.println("Qual o valor que deseja sacar?: ");
-				double saqueCC = scan.nextDouble();
-				cx.setValor(saqueCC);
+				double saquePP = scan.nextDouble();
+				cx.setValor(saquePP);
 				
 				double resultanteSaqueCC = ExecutarSaque.sacar(cx);
                 
