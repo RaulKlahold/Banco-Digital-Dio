@@ -10,7 +10,7 @@ public class ExecutarDeposito {
 		if (valor >= 1) {
 			saldo = saldo + valor;
 		}else {
-			System.out.println("adicionar uma exceptions aqui");
+			System.out.println("Valor superior ao saldo, impossível completar transação");
 		}
 			
     return saldo;
